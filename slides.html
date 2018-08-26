@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Ladies Learning Code</title>
+  <title>Teens Learning Code</title>
   <link rel="stylesheet" href="framework/css/slideshow.css" data-noprefix>
   <link rel="stylesheet" href="framework/css/fonts.css" data-noprefix>
   <link rel="stylesheet" href="framework/css/highlightjs/github.css" data-noprefix>
@@ -20,7 +20,7 @@
 <body class="en" data-duration="360">
   <main>
     <section class="slide welcome highlight">
-      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
+      <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Teens Learning Code logo">Welcome!</h1>
       
       <div class="instructions">
         <!-- ADD WIFI INFO HERE -->
@@ -44,13 +44,13 @@
       </div>
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
-        <p class="left">Content by <a href="http://medium.com/@pearlchen">Pearl Chen</a> and <a href="http://christinatruong.com">Christina Truong</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="left">Content by <a href="http://medium.com/@pearlchen">Pearl Chen</a> and <a href="http://christinatruong.com">Christina Truong</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Teens Learning Code</a></p>
         <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
       </footer>
     </section> 
 
     <section class="slide intro">
-      <img class="logo" src="framework/img/llc-logo-white.png" alt="Ladies Learning Code logo">
+      <img class="logo" src="framework/img/llc-logo-white.png" alt="Teens Learning Code logo">
       <h1 class="heading-bg">
         <span>Introduction to<br>
         JavaScript</span>
@@ -70,7 +70,7 @@
       </div>
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
-        <p class="left">Content by <a href="http://medium.com/@pearlchen">Pearl Chen</a> and <a href="http://christinatruong.com">Christina Truong</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="left">Content by <a href="http://medium.com/@pearlchen">Pearl Chen</a> and <a href="http://christinatruong.com">Christina Truong</a> for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Teens Learning Code</a></p>
         <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
       </footer>
     </section> 
@@ -367,7 +367,7 @@
         
         To go to the JavaScript settings in Chrome, paste this snippet, **chrome://settings/content**, into the address bar.  Then select "Do not allow any site to run JavaScript".
 
-        Now try visiting some popular sites. ([Google](http://google.com), [Facebook](http://facebook.com) , [Twitter](http://twitter.com))
+        Now try visiting some popular sites. ([Google](http://google.com), [YouTube](http://www.youtube.com))
         
         > What interactions are now missing?
 
@@ -430,21 +430,21 @@
 
     <section class="slide two-col-list" data-markdown>
       <script type="text/template">
-        #Automating Repetitive Tasks
+        #Repetitive Tasks 
 
-        What is something that you do that's very repetitive or a hassle (like paying for parking)? Wouldn't it be great if it was automated?
+         How you wash your clothes if you don't have a machine?
         
         * **Repetitive**
-          1.  Find bank machine
-          2.  Pull out bank card
-          3.  Get money out from ATM
-          4.  Buy chips so you can make change
-          5.  Put change into machine
-          6.  Take receipt
+          1.  Put your clothes in a bucket
+          2.  Add water and soap
+          3.  Wash your clothes
+          4.  Add clean water to rinse 
+          5.  Squeeze the clothes to remove the excess of water
+          6.  Take your clothes 
         * **Automated!**
-          1.  Pull the PayPass credit card from your wallet
-          2.  Tap
-          3.  Take receipt
+          1.  Put your clothes in the washing machine
+          2.  Add soap and start the machine
+          3.  Take your clothes
       </script>
     </section>
     
@@ -452,16 +452,16 @@
       <script type="text/template">
         #Automating Repetitive Tasks
 
-        1.  Pull the PayPass credit card from your wallet
-        2.  **Tap**
-        3.  Take receipt
+        1.  Put your clothes in the washing machine
+        2.  **Start the washing machine**
+        3.  Take your clothes
         
-        Step 2 can be thought of as a function. We can't see all of the steps that happen but performing the action will execute some instructions that will allow automatic payments.
+        Step 2 can be thought of as a function. We can't see all of the steps that happen but performing the action will execute some instructions that will wash my clothes.
         
-        If the credit card tap was a function in JavaScript, it could look something like this:
+        If the start the mashing machine was a function in JavaScript, it could look something like this:
 
         ```
-        tapCard()
+        washClothes()
         ```
       </script>
     </section>
@@ -834,15 +834,15 @@
         Whitespace refers to blank characters, space characters, tabs and line breaks. JavaScript ignores whitespace in some instances.  
 
         ```javascript 
-        var name="Ladies Learning Code"; // both will be read the same by JavaScript
-        var name = "Ladies Learning Code"; 
+        var name="Teens Learning Code"; // both will be read the same by JavaScript
+        var name = "Teen Learning Code"; 
         ```
         
         However, whitespace matters when used in a string and when using keywords. 
         ```javascript    
         var name = "LadiesLearningCode";
-        var name = "Ladies Learning Code"; 
-        varname = "Ladies Learning Code"; // will not work
+        var name = "Teens Learning Code"; 
+        varname = "Teens Learning Code"; // will not work
         ```
       </script>
     </section>
@@ -958,7 +958,7 @@
         document.write(subtotal);
         document.write("<br>");
 
-        // Guess what?  Ladies Learning Code members gets 15% off!
+        // Guess what?  Teens Learning Code members gets 15% off!
         // Figure out how much the discount will be.
         var discountAmount = subtotal * discount;
         document.write("Discount: $");
@@ -1047,7 +1047,7 @@
     </section>
     
     <section class="slide llc-loves">
-      <h1>Who loves Ladies Learning Code?</h1>
+      <h1>Who loves Teens Learning Code?</h1>
       
       When would reassigning values come in handy? Click this button:
       
@@ -1350,7 +1350,8 @@ function moreLove(){
         function moreLove(){
           // Add 1 to current count
           loves = loves + 1;   
-          // applies an .innerHTML method to the update element's count
+          // changes the innerHTML property to the new count
+          // innerHTML is the content inside the tag
           update.innerHTML = loves; 
         }
         
@@ -1761,7 +1762,7 @@ function moreLove(){
         In JavaScript, it might look like this:
         
         ```
-        if ( weather === rain ) {
+        if ( weather === "rain" ) {
           bringUmbrella();
         }
 
@@ -1804,7 +1805,7 @@ function moreLove(){
         `else` will give you a catch-all state if your condition fails.
         
         ```
-        if ( weather == rain ) {
+        if ( weather === "rain" ) {
             bringUmbrella();
         } else {
             dressNormally();
@@ -1820,9 +1821,9 @@ function moreLove(){
         Take it a step further by adding `else if` to add more conditions. You can use as many as you need.
 
         ```
-        if ( weather == rain ) {
+        if ( weather === "rain" ) {
           bringUmbrella();
-        } else if ( weather == snow ) {
+        } else if ( weather === "snow" ) {
           wearWarmBoots();
         } else {
           dressNormally();
@@ -1888,7 +1889,7 @@ function moreLove(){
           <tr>
             <td width="15%">==</td>
             <td width="41%">is equal to</td>
-            <td width="44%">ten == two * 5</td>
+            <td width="44%">ten == two \* 5</td>
           </tr>
            <tr>
             <td width="15%">===</td>
@@ -1913,11 +1914,11 @@ function moreLove(){
             <tr>
             <td width="15%">&gt;=</td>
             <td width="41%">greater than or equal to</td>
-            <td width="44%">ten &gt;= two * 5<br />ten &gt;= two * 5 + 1</td>
+            <td width="44%">ten &gt;= two \* 5<br />ten &gt;= two \* 5 - 1</td>
           </tr>
             <tr>
             <td width="15%">&lt;=</td>
-            <td width="41%">less than for equal to</td>
+            <td width="41%">less than or equal to</td>
             <td width="44%">two &lt;= ten<br />two &lt;= 2 </td>
           </tr>
         </table>
@@ -2033,7 +2034,7 @@ if ( price <= 100 ) {
   &lt;/head>
   &lt;body>
     &lt;div id="example">This is an example.</div>
-    &lt;script type="text/javascript" src="scripts.js">&lt;/script>
+    &lt;script src="scripts.js">&lt;/script>
   &lt;/body>
 &lt;/html></code></pre>
       
@@ -2045,12 +2046,32 @@ if ( price <= 100 ) {
       <script type="text/template">
         # Next Steps
         
-        * Explore more Ladies Learning Code workshops by following our [Roadmap](http://ladieslearningcode.com/roadmap/).
+        * Explore more Teens Learning Code workshops by following our [Roadmap](http://ladieslearningcode.com/roadmap/).
         * list of free online [JSbooks](http://jsbooks.revolunet.com/)
         * Tutorials & references from the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
       </script>
     </section>
     
+
+    </section>
+
+    <section class="slide small-type" data-markdown data-toc>
+      <script type="text/template">
+        # Upcoming Experiences
+        
+        * HTML & CSS Website Creation - September 8th
+        * Javascript - September 15th 
+        * AI and Machine Learning - September 18th & 20th 
+        * National Learn to Code Day - September 22nd
+        * Kids: Programming with Ruby - September 16th
+        * Girls: Animating with Scratch - September 29th
+        * Teens: Python for Beginners - September 29th
+
+        #Social media  
+        * [@learningcodeyvr](https://twitter.com/learningcodeyvr)
+      </script>
+    </section>
+
     <!-- Last slide -->
     <section class="slide last">
       <h1>Thank you!</h1>
@@ -2058,13 +2079,13 @@ if ( price <= 100 ) {
         <span>Intro to Programming<br> with JavaScript</span>
       </h2>  
 
-      <!-- <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
-      <h2><span class="cursive">with</span> Instructor Name</h2>
+     <img class="instructor" src="https://pbs.twimg.com/profile_images/1026577393056501760/XVOZodOD_400x400.jpg" alt="instructor name">
+      <h2><span class="cursive">with</span> Liz Barraza</h2>
       <ul>
-        <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="#">mywebsite.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
-      </ul> -->
+        <li><a href="mailto:liz.barraza@gmail.com">liz.barraza@gmail.com</a></li>
+        <!--li><a href="#">mywebsite.com</a></li-->
+        <li><a href="http://twitter.com/LizIsWriting">@LizIsWriting</a></li>
+      </ul> 
 
       <p class="attribution">Illustrations by <a href="http://floridaelago.com/" target="_blank">Florida Elago</a>.<br>
       Slide presentation created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
